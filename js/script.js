@@ -90,10 +90,13 @@ jQuery('img.svg').each(function(){
             }, 'xml');
 
         });
-
+/*
 $(function() {  
 
    
     jQuery.scrollSpeed(100, 800);
 
 });
+*/
+
+

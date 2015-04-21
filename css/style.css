@@ -8,28 +8,27 @@ body {
     overflow: hidden;overflow-y:auto;
 }
 
+h1 {
+    text-transform: uppercase;
+}
+
 #introduction { 
     width: 100%; 
     height: 100%; 
     position: relative; 
     background: url("../images/city2.jpg") no-repeat center center scroll; 
-   
-    
-    /*
-    -webkit-background-size: cover; 
-    -moz-background-size: cover; 
-    -o-background-size: cover; 
-   
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/mountain.jpg', sizingMethod='scale'); 
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/mountain.jpg', sizingMethod='scale')"; 
-    */
     text-align: center; 
     overflow: hidden; 
      background-size: cover; 
 }
 
 
-
+.dash { 
+    height: 1px; 
+    width: 30px; 
+    background: #333;
+    margin: 20px auto; 
+}
 
 #about {
     margin-top: 1%;
@@ -40,10 +39,55 @@ body {
     text-align: center;
 }
 
+#about p {
+    color: #433f3f; 
+    margin: 0 auto; 
+    font-size: 1.4em; 
+    letter-spacing: 0.04em; 
+    line-height: 1.7em; 
+    font-weight: 300;
+}
+
+#about h1 {
+    margin-top: 4%;
+}
+
+
+
 #portfolio {
     width: 100%;
     height: 100%;
     background-color: whitesmoke;
+    padding: 100 0 140px;
+    text-align: center;
+}
+
+#portfolio h1 {
+    margin-top: 5%;
+}
+
+#whatido {
+    color: #e0e0e0;
+    width: 100%;
+    height: 100%;
+    background-color: #585858;
+    padding: 100 0 140px;
+    text-align: center;
+}
+
+#whatido h1 {
+    margin-top: 5%;
+    color: #fff;
+    margin-bottom: 5%;
+}
+
+
+
+#contact {
+    color: #e0e0e0;
+    width: 100%;
+    height: 50%;
+    background-color: #585858;
     padding: 100 0 140px;
     text-align: center;
 }
@@ -153,46 +197,18 @@ ul {
      text-transform: uppercase;
 }
 
-ul i {
-    padding-right: 15px;
-}
 
-#homeLi {
-    animation-delay: 0.2s; 
-    -webkit-animation-delay: 0.2s; 
-    -moz-animation-delay: 0.2s; 
-    -o-animation-delay: 0.2s;
-}
 
-#aboutLi {
-    animation-delay: 0.4s; 
-    -webkit-animation-delay: 0.4s; 
-    -moz-animation-delay: 0.4s; 
-    -o-animation-delay: 0.4s;
-}
 
-#portfolioLi {
-    animation-delay: 0.6s; 
-    -webkit-animation-delay: 0.6s; 
-    -moz-animation-delay: 0.6s; 
-    -o-animation-delay: 0.6s;
-}
-
-#contactLi {
-   animation-delay: 0.8s; 
-    -webkit-animation-delay: 0.8s; 
-    -moz-animation-delay: 0.8s; 
-    -o-animation-delay: 0.8s; 
-     
-}
 
 .infoText {
     padding-top: 5%;
+    margin-top: 6%;
 }
 
 
 .container {
-    height: 100%;
+   
     font-family: "Montserrat";
     font-size: 1.2em;
 }
@@ -307,3 +323,145 @@ ul i {
 	100% { -webkit-transform: scale(1); }
 }
 
+
+
+
+.da-thumbs {
+	list-style: none;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	margin: 20px auto;
+	padding: 0;
+    text-align: center;
+}
+.da-thumbs li {
+	padding: 12px;
+	position: relative;
+}
+.da-thumbs li a,
+.da-thumbs li a img {
+	display: block;
+	position: relative;
+    width: 100%;
+}
+
+
+.da-thumbs li a {
+	overflow: hidden;
+}
+.da-thumbs li a div {
+	position: absolute;
+	background: #333;
+	background: rgba(75,75,75,0.7);
+	width: 100%;
+	height: 100%;
+}
+.da-thumbs li a div span {
+	display: block;
+	padding: 10px 0;
+	margin: 40px 20px 20px 20px;
+	text-transform: uppercase;
+	font-weight: normal;
+	color: rgba(255,255,255,0.9);
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+	border-bottom: 1px solid rgba(255,255,255,0.5);
+	box-shadow: 0 1px 0 rgba(0,0,0,0.1), 0 -10px 0 rgba(255,255,255,0.3);
+    font-size: 1em;
+}
+
+
+
+@media screen and (max-width: 768px){
+    #about {
+        font-size: 0.6em;
+    }
+    #about h1 {
+        font-size: 1.6em;
+    }
+    #whatido h1 {
+        font-size: 1.3em;
+    }
+    #portfolio h1 {
+        font-size: 1.3em;
+    }
+    #contact h1 {
+        font-size: 1.3em;
+    }
+    .face {
+    width: 100px;
+    height: 200px;
+}
+    
+    #portfolio h1 {
+        margin-bottom: 1%;
+    }
+ 
+}
+
+@media screen and (max-width: 1000px){
+
+    .da-thumbs li a div span {
+    font-size: 0.5em;
+}
+    
+}
+
+.myMenu li i {
+    margin-right: 8px;
+}
+
+.social a {
+    margin-top: 15px;
+    text-align: center;
+    color: #c7c7c7;
+}
+
+.social i {
+   padding: 5px;
+}
+
+.social a:hover {
+    color: #A3A3A2;
+    cursor: pointer;
+}
+
+.contactList i {
+    margin-right: 5px;
+}
+
+#contact h1 {
+    margin-top: 0;
+}
+
+.fa-paper-plane-o {
+    margin-top: 2%;
+}
+
+.example {
+	filter: brightness(40%);
+	-webkit-filter: brightness(40%);
+	-moz-filter: brightness(40%);
+	-o-filter: brightness(40%);
+	-ms-filter: brightness(40%);
+}
+
+
+#contact h1 {
+
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+
+#contact .contactText {
+    text-align: left;
+    margin-left: 26%;
+}
+
+#contact .social {
+    margin-top: 10%;
+}
+
+.social i {
+    padding: 12px;
+}
