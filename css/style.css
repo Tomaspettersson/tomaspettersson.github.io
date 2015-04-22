@@ -150,6 +150,10 @@ h1 {
     color: #A3A3A2;
     cursor: pointer;
 }
+
+#envelope:hover {
+    color: #A3A3A2;
+}
 /*
 #navigation {
     display: none;
@@ -412,13 +416,15 @@ ul {
 }
 
 .social a {
-    margin-top: 15px;
+    
     text-align: center;
-    color: #c7c7c7;
+    color: #767575;
+    
 }
 
 .social i {
-   padding: 5px;
+    margin-top: 50px;
+   padding: 10px;
 }
 
 .social a:hover {
@@ -447,21 +453,52 @@ ul {
 }
 
 
-#contact h1 {
 
-    margin-top: 2%;
-    margin-bottom: 4%;
+#lean_overlay {
+    position: fixed;
+    z-index:100;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: #000;
+    display: none;
 }
 
-#contact .contactText {
+#test {
+    text-align: center;
+width: 600px;
+height: 400px;
+padding: 30px;
+display: none;
+background: #d9d2d2;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+box-shadow: 0px 0px 4px rgba(0,0,0,0.7);
+-webkit-box-shadow: 0 0 4px rgba(0,0,0,0.7);
+-moz-box-shadow: 0 0px 4px rgba(0,0,0,0.7);
+    font-family: "Montserrat";
+}
+
+#test li {
+    font-size: 1.2em;
+}
+
+
+#envelope {
+    color: #BABABA;
+     position: fixed;
+    top: 1em;
+    right: 1em;
+  
+}
+
+.contactText {
+    margin-top: 30px;
+}
+
+.contactList li {
     text-align: left;
-    margin-left: 26%;
-}
-
-#contact .social {
-    margin-top: 10%;
-}
-
-.social i {
-    padding: 12px;
+    padding: 1px;
 }
